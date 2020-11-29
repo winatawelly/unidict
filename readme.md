@@ -18,7 +18,7 @@ A simple web based application that lets you search information about universiti
 
 Clone the github repo
 
-    git clone https://blablabla
+    git clone https://github.com/winatawelly/unidict.git
 
 ### Installing
 Just install the npm packages to run this app
