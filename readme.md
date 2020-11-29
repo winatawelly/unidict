@@ -1,4 +1,4 @@
-# Project Title
+# UniDict
 
 UniDict - University Dictionaries. 
 A simple web based application that lets you search information about universities across the world.
@@ -21,9 +21,10 @@ Clone the github repo
     git clone https://github.com/winatawelly/unidict.git
 
 ### Installing
-Just install the npm packages to run this app
+Enter the cloned directory and then install the npm packages to run this app
 
 
+    cd unidict
     npm i
 
 
@@ -46,6 +47,5 @@ I have little to no experience about unit testing. I'm currently learning more a
 
 - I used `window.open()` instead of proper React navigator system for the sake of simplicity and speed
 - Because React run in browser, it doesnt have an access to write into file. So I use `sessionStorage` instead. The main disadvantage of this is that the data (userList, userFavorite, subsriberList) will be erased if the tab or window is closed.
-
 
 
