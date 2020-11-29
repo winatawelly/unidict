@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types'
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -6,7 +6,6 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 import FavoriteIcon from '@material-ui/icons/Favorite';
@@ -24,10 +23,6 @@ const useStyles = makeStyles({
 });
 
 export default function UniversityCard(props) {
-  const [state, setState] = useState({
-    isFav: false,
-  })
-
   const classes = useStyles();
 
   const onAddToFavorites = () => {
@@ -35,7 +30,7 @@ export default function UniversityCard(props) {
     props.onAddToFavorites({
       name: props.name,
       country: props.country,
-      countryCode: props.countryCode,
+      alpha_two_code: props.countryCode,
       web_pages: [props.web],
     })
   }

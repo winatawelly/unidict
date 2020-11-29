@@ -38,7 +38,7 @@ export default function LoginPage(props) {
   })
 
   useEffect(() => {
-    window.sessionStorage.getItem('isLoggedIn') && window.open('/home', '_self')
+    JSON.parse(window.sessionStorage.getItem('isLoggedIn')) && window.open('/home', '_self')
   }, [])
 
 
@@ -166,7 +166,7 @@ export default function LoginPage(props) {
       <Header
         absolute
         color='transparent' 
-        brand='Material Kit React'
+        brand='UniDict'
         rightLinks={<HeaderLinks />}
         {...rest}
       />

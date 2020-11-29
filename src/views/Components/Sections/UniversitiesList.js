@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 import { makeStyles } from '@material-ui/core/styles'
@@ -8,7 +8,6 @@ import LoginModal from '../Sections/LoginModal.js'
 
 
 import styles from 'assets/jss/material-kit-react/views/componentsSections/listStyle.js'
-import { card } from 'assets/jss/material-kit-react'
 const useStyles = makeStyles(styles)
 
 export default function UniversitiesList(props) {

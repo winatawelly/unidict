@@ -47,10 +47,17 @@ export default function HeaderLinks(props) {
       name: 'favorites',
       linkTo: '/saved'
     }, {
+      name: 'admin',
+      linkTo: '/admin'
+    }, {
       name: 'logout',
       linkTo: '/'
     }
   ]
+
+  const onButtonPressed = (type) => {
+    type === 'logout' && window.sessionStorage.setItem('isLoggedIn', false)
+  }
 
   const linksRenderer = () => {
     const isUserLoggedIn = JSON.parse(window.sessionStorage.getItem('isLoggedIn'))
@@ -60,13 +67,14 @@ export default function HeaderLinks(props) {
   }
   
   const linkRenderer = (link, i) => {
-    link.name === 'logout' && window.sessionStorage.setItem('isLoggedIn', false)
+    // link.name === 'logout' && window.sessionStorage.setItem('isLoggedIn', false)
     return (
       <ListItem className={classes.listItem}>
         <Button
           href={link.linkTo}
           color="transparent"
           className={classes.navLink}
+          onClick={ onButtonPressed.bind(this, link.name)}
         >
           {link.name}
         </Button>
