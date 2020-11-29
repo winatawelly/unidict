@@ -30,7 +30,7 @@ Just install the npm packages to run this app
 ## Running the tests
 
 Not Fulfilled.
-I have little to no experience about unit testing. I still need to learn more about unit testing before i can applied them properly to my project.
+I have little to no experience about unit testing. I'm currently learning more about testing in general so that i can apply them to my future project
 
 
 ## Built With
