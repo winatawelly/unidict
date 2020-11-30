@@ -26,6 +26,11 @@ Enter the cloned directory and then install the npm packages to run this app
 
     cd unidict
     npm i
+    
+run the app
+
+
+    npm run start
 
 
 ## Running the tests
